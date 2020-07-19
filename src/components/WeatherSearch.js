@@ -7,6 +7,7 @@ const WeatherSearch = () => {
     <div className='weather-search'>
       <form onSubmit={api_call} className='weather-search__form'>
         <input
+        name="location"
           autoComplete='off'
           className='weather-search__input'
           type='text'
