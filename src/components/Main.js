@@ -6,6 +6,7 @@ import WeatherSearch from "./WeatherSearch";
 import WeatherData from "./WeatherData";
 import Context from "../Context";
 import Error from "./Error"
+import DateTime from './DateTime';
 
 const Main = () => {
   const [weather, setWeather] = useState();
@@ -34,6 +35,7 @@ const Main = () => {
     <div className='main'>
       <Header />
       <Content>
+        <DateTime />
         <Context.Provider value={{ api_call, weather, city}}>
           {/* if names of key and value are the same, "api_call: api_call"I can remove it   */}
           <WeatherSearch />
