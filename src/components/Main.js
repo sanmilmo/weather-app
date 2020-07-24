@@ -27,6 +27,7 @@ const Main = () => {
     const response = await request;
     setWeather(response.data.main);
     setCity(response.data.name);
+    setError(null);
   };
 
   weather && console.log(weather);

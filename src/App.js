@@ -6,7 +6,7 @@ const App = () => {
   return (
    <Wrapper>
       <Main />
-    </Wrapper>
+  </Wrapper>
   );
 }
  

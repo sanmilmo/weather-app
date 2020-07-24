@@ -13,7 +13,7 @@ const WeatherSearch = () => {
           type='text'
         />
         <div className='weather-search__submit'>
-          <button className='weather-search__button'>&rarr;</button>
+          <button className='weather-search__button'>search</button>
         </div>
       </form>
     </div>
