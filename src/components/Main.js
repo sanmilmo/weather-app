@@ -7,6 +7,8 @@ import WeatherData from "./WeatherData";
 import Context from "../Context";
 import Error from "./Error"
 import DateTime from './DateTime';
+import Tagline from './Tagline';
+import Footer from './Footer';
 
 const Main = () => {
   const [weather, setWeather] = useState();
@@ -37,12 +39,14 @@ const Main = () => {
       <Header />
       <Content>
         <DateTime />
+        <Tagline />
         <Context.Provider value={{ api_call, weather, city}}>
           {/* if names of key and value are the same, "api_call: api_call"I can remove it   */}
           <WeatherSearch />
           {weather && <WeatherData />}
           {error && <Error error={error}/>}
         </Context.Provider>
+        <Footer />
       </Content>
     </div>
   );
